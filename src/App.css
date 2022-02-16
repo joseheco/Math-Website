@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
 
 #back {
@@ -19,7 +18,7 @@ header {
   padding-right: 4rem;
   align-items: center;
   background-color: #bdc597e8;
-  color: black
+  color: black;
 }
 
 ul {
@@ -37,7 +36,6 @@ h2 {
   display: flex;
   justify-content: center;
   margin: 4rem 0 3rem 3rem;
-  box-shadow: #bdc597e8;
 }
 
 p {

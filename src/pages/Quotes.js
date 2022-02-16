@@ -1,29 +1,31 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Quote = () => {
-  return (
-    <div className="quotes-div">
-      <Phrases />
-    </div>
-  )
-}
+const Quote = () => (
+  <div className="quotes-div">
+    <Phrases />
+  </div>
+);
 
 const Phrases = () => {
-  const url = 'https://random-math-quote-api.herokuapp.com/'
-  const [list , setList] = useState()
+  const url = 'https://random-math-quote-api.herokuapp.com/';
+  const [list, setList] = useState();
   const fetchApi = async () => {
-    const response = await fetch(url)
-    const respondeJSON = await response.json()
-    setList(respondeJSON)
-  }
+    const response = await fetch(url);
+    const respondeJSON = await response.json();
+    setList(respondeJSON);
+  };
   useEffect(() => {
-    fetchApi()
-  }, [])
+    fetchApi();
+  }, []);
   return (
     <>
-      <p className="quotes">{ !list ? 'Loading..' : list.quote} - { !list ? '..' : list.author}</p>
+      <p className="quotes">
+        { !list ? 'Loading..' : list.quote}
+        -
+        { !list ? '..' : list.author}
+      </p>
     </>
-)
-}
+  );
+};
 
 export default Quote;
