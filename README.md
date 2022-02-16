@@ -10,6 +10,7 @@
 
 - React
 - CSS
+- Route
 
 
 ## Getting Started
