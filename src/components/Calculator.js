@@ -23,7 +23,7 @@ const Calculator = () => {
 
   return (
     <div className="main">
-      <div className="display">
+      <div className="display" data-testid="display">
         { valueOperation(objVal) }
       </div>
       <div className="row">
