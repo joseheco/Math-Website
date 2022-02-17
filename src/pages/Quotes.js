@@ -22,7 +22,7 @@ const Phrases = () => {
       <p className="quotes">
         { !list ? 'Loading..' : list.quote}
         -
-        { !list ? '..' : list.author}
+        { !list ? 'Author' : list.author}
       </p>
     </>
   );
